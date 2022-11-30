@@ -52,10 +52,6 @@ exports.updateContent = catchAsyncErrors(async (req, res, next) => {
   });
 });
 
-
-
-
-
 //USER & ADMIN OPERATIONS
 
 //GET ALL CONTENTS
@@ -74,7 +70,10 @@ exports.getAllContents = catchAsyncErrors(async (req, res) => {
 
 //GET SINGLE CONTENT
 exports.getContent = catchAsyncErrors(async (req, res, next) => {
-  const content = await Content.findById(req.params.id);
+  const content = await Content.findById(req.params.id).populate(
+    "createdBy lastUpdatedBy",
+    "name email"
+  );
 
   if (!content) {
     return next(new ErrorHandler("Content not found", 404));

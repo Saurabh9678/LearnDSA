@@ -3,6 +3,78 @@ const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 const User = require("../models/userModel");
 const sendToken = require("../utils/jwtToken");
 
+
+
+//ADMIN ONLY
+
+//Get All User --admin
+exports.getAllUser = catchAsyncErrors(async (req, res, next) => {
+  const users = await User.find();
+
+  res.status(200).json({
+    success: true,
+    users,
+  });
+});
+
+//Get Single User Detail --admin
+exports.getSingleUserDetail = catchAsyncErrors(async (req, res, next) => {
+  const user = await User.findById(req.params.id);
+
+  if (!user)
+    return next(
+      new ErrorHandler(`User not exist with this id ${req.params.id}`, 400)
+    );
+
+  res.status(200).json({
+    success: true,
+    user,
+  });
+});
+
+//Update User Role --admin
+exports.updateRole = catchAsyncErrors(async (req, res, next) => {
+  const newUserData = {
+    name: req.body.name,
+    email: req.body.email,
+    role: req.body.role,
+  };
+
+  const user = await User.findByIdAndUpdate(req.params.id, newUserData, {
+    new: true,
+    runValidators: true,
+    useFindAndModify: false,
+  });
+
+  if (!user) return next(new ErrorHandler("User Doesn't exist"), 400);
+
+  res.status(200).json({
+    success: true,
+    user
+  });
+});
+
+//Delete User --admin
+
+exports.deleteUser = catchAsyncErrors(async (req, res, next) => {
+  const user = await User.findById(req.params.id);
+
+  //We will remove cloudinary later
+
+  if (!user) return next(new ErrorHandler("User doesn't exist", 400));
+
+  await user.remove();
+
+  res.status(200).json({
+    success: true,
+    message: "User deleted successfully"
+  });
+});
+
+
+
+//USER AND ADMIN 
+
 //Register user
 exports.registerUser = catchAsyncErrors(async (req, res, next) => {
   const { name, email, password } = req.body;
