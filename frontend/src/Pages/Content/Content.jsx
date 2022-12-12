@@ -1,7 +1,7 @@
 import React from 'react'
 import Description from '../../components/Description/Description'
 import IDE from '../../components/IDE/IDE'
-import "./Content.css"
+import '../Content/Content.css'
 const Content = () => {
     return (
         <div>
