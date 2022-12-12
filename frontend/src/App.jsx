@@ -5,6 +5,11 @@ import WebFont from "webfontloader"
 import React from 'react';
 import Home from './Pages/Home/Home';
 import Content from './Pages/Content/Content';
+import Login from './Pages/Login/Login';
+import Register from './Pages/Register/Register';
+import Topic from './Pages/Topic/Topic';
+
+
 function App() {
   React.useEffect(()=>{
     WebFont.load({
@@ -19,6 +24,9 @@ function App() {
       <Routes>
       <Route exact path="/" element={ <Home/>}/>
       <Route exact path="/content" element={ <Content/>}/>
+      <Route exact path="/login" element={ <Login/>}/>
+      <Route exact path="/register" element={ <Register/>}/>
+      <Route exact path="/topic" element={ <Topic/>}/>
       <Route path="*" element={<div>Page not found 404</div>}/>
       </Routes>
     </Router>

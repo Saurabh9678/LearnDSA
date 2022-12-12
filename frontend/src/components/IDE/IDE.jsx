@@ -1,6 +1,6 @@
 import React from "react";
 import Editor from "@monaco-editor/react";
-
+import "./IDE.css"
 
 export default function IDE() {
     return (
