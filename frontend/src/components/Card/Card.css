@@ -30,4 +30,5 @@
 .card:hover{
     cursor: pointer;
     box-shadow: 2px 2px 15px rgb(148, 147, 147);
+    transition-duration: 0.3s;
 }
