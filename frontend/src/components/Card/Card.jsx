@@ -1,3 +1,4 @@
+
 import "./Card.css"
 export default function Card() {
     const handleClick = event => {
@@ -13,3 +14,4 @@ export default function Card() {
         </>
     )
 }
+
