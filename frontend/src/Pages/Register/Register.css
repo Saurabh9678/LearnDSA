@@ -1,3 +1,4 @@
+
 .RegisterForm{
     display: inline-block;
     width: 40vw;
@@ -52,3 +53,4 @@
     box-shadow: 1px 1px 10px 1px blue;
     transition-duration: 0.3s;
 }
+

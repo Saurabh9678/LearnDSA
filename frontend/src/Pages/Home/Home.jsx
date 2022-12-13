@@ -1,7 +1,6 @@
 import React from 'react'
-import Card from '../../components/Card/Card'
 
-import '../../components/Card/Card.css'
+import Card from '../../components/Card/Card'
 
 const Home = () => {
   return (
@@ -12,6 +11,7 @@ const Home = () => {
     </div>
 
     </>
+
   )
 }
 
