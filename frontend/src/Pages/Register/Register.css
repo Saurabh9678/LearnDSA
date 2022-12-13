@@ -20,7 +20,7 @@
     justify-content: center;
     margin: 0px auto;
     font-size: 18px;
-    text-shadow: 2px 2px 2px grey;
+    font-family: roboto;
 }
 .form{
     display: flex;
@@ -28,15 +28,17 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
-.inputform{
+.inputForm{
     display: inline-block;
     width: 25vw;
-    padding-left: 20px;
-    height: 5vh;
+    /* padding-left: 1px; */
+    height: 0.2rem;
     margin: 0px auto;
+    font-size: 12px;
     outline: none;
+    box-sizing: border-box;
 }
-.submit{
+.registerBtn{
     display: inline-block;
     margin: 0px auto;
     width: 12vw;
@@ -46,9 +48,8 @@
     color: white;
     border-radius: 7px;
     border: none;
-    font-size: 16px;
 }
-.submit:hover{    
+.registerBtn:hover{    
     cursor: pointer;
     box-shadow: 1px 1px 10px 1px blue;
     transition-duration: 0.3s;

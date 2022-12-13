@@ -10,11 +10,11 @@ const Register = () => {
                     <h2>Sign Up</h2>
                 </div>
                 <div className="formName">
-                    <form action="/" className="form">
-                        <input type="text" className="inputform" placeholder="Enter Your Name" />
-                        <input type="email" className="inputform" placeholder="Enter Your Email" />
-                        <input type="password" className="inputform" placeholder="Enter Your Password" />
-                        <input type="submit" className="submit" value="Create an Account" />
+                    <form action="/" className="form" method='post'>
+                        <input type="text" className="inputForm" placeholder="Enter your Name" />
+                        <input type="email" className="inputForm" placeholder="Enter your Email" />
+                        <input type="password" className="inputForm" placeholder="Enter your Password" />
+                        <button className='registerBtn'>Create an Account</button>
                     </form>
 
                 </div>
