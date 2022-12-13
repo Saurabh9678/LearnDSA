@@ -1,4 +1,4 @@
-
+import "./Card.css"
 export default function Card() {
     const handleClick = event => {
         console.log("Card Clicked");
