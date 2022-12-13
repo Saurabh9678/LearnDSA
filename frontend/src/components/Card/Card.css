@@ -1,0 +1,35 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30vw;
+    font-family: "Roboto";
+    height: 30vh;
+    /* border: 1px solid black; */
+    padding: 10px 25px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 20px 4px rgba(20, 20,20, 0.4);
+    border-radius: 10px;
+}
+.card h4{
+
+    color: rgb(84, 83, 83);
+}
+.btn{
+    width: 12vw;
+    height: 7vh;
+    font-size: 16px;
+    background-color:  #1BA94C;
+    border: none;
+    color: white;
+    box-shadow: 1px 1px 5px 1px #1BA94C;
+
+}
+.cardContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 15px rgb(148, 147, 147);
+}

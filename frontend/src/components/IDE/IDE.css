@@ -1,0 +1,32 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.Editor{
+    width: 50vw;
+    height: 70vh;
+}
+.BtnContainer{
+    display: flex;
+    background-color: rgb(56, 55, 55);
+    width: 50vw;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.Btn{
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    height: 60%;
+    width: 20%;
+    font-size: 15px;
+    border: none;
+}
+.Btn:hover{
+    cursor: pointer;
+    color: blue;
+    background-color: white;
+    border: 2px solid blue;
+    transition-duration: 1s;
+}

@@ -3,6 +3,7 @@
     display: flex;
     padding-left: 10%;
     padding-right: 10%;
+    font-family: 'Roboto';
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(rgb(64, 64, 240),rgb(75, 75, 189));

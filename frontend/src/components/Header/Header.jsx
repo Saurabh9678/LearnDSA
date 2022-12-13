@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import "./Header.css";
+import {Link} from "react-router-dom"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="Navbar">
-      <span className="nav-logo">Learn DSA</span>
+      <span className="nav-logo">LearnDSA</span>
       <div className={`nav-items ${isOpen && "open"}`}>
-        <a href="/home">Home</a>
-        <a href="/about">About</a>
-        <a href="/topic">Topic</a>
-        <a href="/contact">Contact</a>
+        <Link to={"/"}>Home</Link>
+        <Link to={"/content"}>Topic</Link>
       </div>
       <div
         className={`nav-toggle ${isOpen && "open"}`}
