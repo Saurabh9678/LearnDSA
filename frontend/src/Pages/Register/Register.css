@@ -1,57 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-.RegisterForm{
-    display: inline-block;
-    width: 40vw;
-    padding: 30px;
-    height: 50vh;
-    box-shadow: 3px 3px 15px 3px rgb(184, 183, 183);
-    margin: 50px auto;
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-.RegisterContainer{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-.Head {
-    display: flex;
-    width: 8vw;
-    justify-content: center;
-    margin: 0px auto;
-    font-size: 18px;
-    font-family: roboto;
-}
-.form{
-    display: flex;
-    height: 40vh;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.inputForm{
-    display: inline-block;
-    width: 25vw;
-    /* padding-left: 1px; */
-    height: 0.2rem;
-    margin: 0px auto;
-    font-size: 12px;
-    outline: none;
+*{
     box-sizing: border-box;
 }
-.registerBtn{
-    display: inline-block;
-    margin: 0px auto;
-    width: 12vw;
-    height: 7vh;
+body{
+    background: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+.signupBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 62vh;
+    padding: 40px;
+    transform: translate(-50%,-50%);
+    background: #232222;
+    box-shadow: 0 15px 25px rgb(189, 187, 187);
+    border-radius: 10px;
+}
+.signupBox h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+.signupBox .userFormBox input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
     font-size: 15px;
-    background-color: blue;
-    color: white;
-    border-radius: 7px;
+    color: #fff;
+    margin-bottom: 30px;
     border: none;
-}
-.registerBtn:hover{    
-    cursor: pointer;
-    box-shadow: 1px 1px 10px 1px blue;
-    transition-duration: 0.3s;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
 }
 
+.signupBox .userFormBox label{
+    position: relative;
+    top: 0;
+    left: -60px;
+    padding: 10px 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.signupBox .userFormBox input:focus~label,
+.signupBox .userFormBox input:valid~label {
+    top: -85px;
+    left: 0;
+    color: #D74345;
+    font-size: 14px;
+}
+#signupBtn{
+    /* padding: 10px 20px;
+    color: #CBBDDB;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    border: 1px solid #D74345;
+    margin: auto; */
+    position: absolute;
+    padding: 10px 30px;
+    margin: -33px 100px;
+    color: #D74345;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+#signupBtn::before{
+    content: " ";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #D74345;
+    border-left: 2px solid #D74345;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+#signupBtn::after{
+    content: " ";
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 15px;
+    height: 15px;
+    border-bottom: 2px solid #D74345;
+    border-right: 2px solid #D74345;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+#signupBtn:hover::before, #signupBtn:hover::after{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+#signupBtn:hover{
+    /* background: #D74345;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #D74345,0 0 15px #D74345,0 0 20px #D74345,0 0 25px #D74345 ; */
+    background: #D74345;
+    color: #fff;
+    box-shadow: 0 0 30px #D74345;
+    transition-delay: 0.5s;
+}
+.buttonFormRegister{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
