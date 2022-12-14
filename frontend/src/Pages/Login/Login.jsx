@@ -1,28 +1,29 @@
-import React from 'react'
+// import React from 'react'
 import "./Login.css"
 const Login = () => {
   return (
-    <div className="center">
-    <div className="cover">
-            <h1>Login</h1>
-            <input type="text" placeholder="username" />
-            <input type="password" placeholder="password" />
-
-            <div className="login-btn">Login</div>
-
-            <p className="text">Or login using</p>
-
-            <div className="alt-login">
-                <div className="facebook"></div>
-                <div className="google">
-                    
-                </div>
+    <>
+      <div className="loginBox">
+        <h2>Login</h2>
+        <form >
+          <div className="userBox">
+            <input type="text" name="" required="" />
+            <label>User Name</label>
+          </div>
+          <div className="userBox">
+            <input type="password" name="" required="" />
+            <label>Password</label>
+          </div>
+          <div className="buttonFormLogin">
+            <a id='loginBtn' href="#">Submit</a>
+            <div className="register">
+              Don't have an account ?
+              <a href="#">Register</a>
             </div>
-
-           
-            
-        </div>
-        </div>
+          </div>
+        </form>
+      </div>
+    </>
   )
 }
 
