@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap'); */
 
 
 *{
@@ -17,18 +17,20 @@ body{
     top: 50%;
     left: 50%;
     width: 400px;
-    max-height: 55vh;
-    padding: 40px;
+    height: fit-content;
+    padding: 20px 40px;
     transform: translate(-50%,-50%);
     background: #232222;
     box-shadow: 0 15px 25px rgb(189, 187, 187);
     border-radius: 10px;
+    box-sizing: border-box;
 }
 .loginBox h2{
     margin: 0 0 30px;
     padding: 5px;
     color: #fff;
     text-align: center;
+    box-sizing: border-box;
     /* font-family: 'Ubuntu', sans-serif; */
     /* font-size: 30px;
     background: linear-gradient(270deg,#D74345,black );
@@ -46,6 +48,7 @@ body{
     border-bottom: 1px solid #fff;
     outline: none;
     background: transparent;
+    box-sizing: border-box;
 }
 
 .loginBox .userBox label{
@@ -58,6 +61,7 @@ body{
     color: #fff;
     pointer-events: none;
     transition: 0.5s;
+    box-sizing: border-box;
 }
 .loginBox .userBox input:focus~label,
 .loginBox .userBox input:valid~label {
@@ -67,16 +71,6 @@ body{
     font-size: 14px;
 }
 #loginBtn{
-    /* padding: 10px 20px;
-    color: #CBBDDB;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: 0.5s;
-    letter-spacing: 4px;
-    border: 1px solid #D74345;
-    margin: auto; */
     position: absolute;
     padding: 10px 30px;
     margin: -33px 100px;
@@ -85,6 +79,7 @@ body{
     font-size: 18px;
     text-transform: uppercase;
     transition: 0.5s;
+    box-sizing: border-box;
 }
 #loginBtn::before{
     content: " ";
@@ -114,34 +109,49 @@ body{
     width: 100%;
     height: 100%;
     transition-delay: 0s;
+    border-radius: 5px;
 }
 #loginBtn:hover{
-    /* background: #D74345;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #D74345,0 0 15px #D74345,0 0 20px #D74345,0 0 25px #D74345 ; */
     background: #D74345;
     color: #fff;
     box-shadow: 0 0 30px #D74345;
     transition-delay: 0.5s;
+    border-radius: 2px;
+
 }
 .buttonFormLogin{
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    box-sizing: border-box;
+
 }
 .register{
     font-size: 14px;
     text-decoration: none;
     color: rgb(206, 206, 250);
-    margin: 30px auto;
+    margin: 0px auto;
+    margin-top: 30px;
     width: 60%;
     text-align: center;
+    box-sizing: border-box;
+
 }
 .register a{
-    display: block;
-    margin: 7px auto;
+    display: inline-block;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 5px 7px;
+    justify-content: center;
     color: #D74345;
     text-decoration: none;
+    box-sizing: border-box;
+}
+.register a:hover{
+    box-shadow: 0 0 20px #D74345;
+    background-color: #D74345;
+    color: #fff;
+    border-radius: 3px;
+    transition-duration: 0.5s;
 }
 
