@@ -56,10 +56,12 @@ exports.updateContent = catchAsyncErrors(async (req, res, next) => {
 
 //GET ALL CONTENTS
 exports.getAllContents = catchAsyncErrors(async (req, res) => {
+  const resultPerPage = 5;
   const contentCount = await Content.countDocuments();
   const apiFeatures = new ApiFeatures(Content.find(), req.query)
     .search()
-    .filter();
+    .filter()
+    .pagination(resultPerPage);
   const contents = await apiFeatures.query;
   res.status(200).json({
     success: true,
