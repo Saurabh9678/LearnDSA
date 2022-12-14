@@ -2,6 +2,7 @@
 import "./Login.css"
 const Login = () => {
   return (
+
     <>
       <div className="loginBox">
         <h2>Login</h2>
@@ -24,6 +25,7 @@ const Login = () => {
         </form>
       </div>
     </>
+
   )
 }
 
