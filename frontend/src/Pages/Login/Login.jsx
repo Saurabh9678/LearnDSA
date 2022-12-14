@@ -2,8 +2,10 @@ import React from 'react'
 import "./Login.css"
 const Login = () => {
   return (
+    
     <div className="center">
-    <div className="cover">
+    
+    <form action="/" className="form">
             <h1>Login</h1>
             <input type="text" placeholder="username" />
             <input type="password" placeholder="password" />
@@ -17,11 +19,13 @@ const Login = () => {
                 <div className="google">
                     
                 </div>
+                
             </div>
-
+    
            
             
-        </div>
+        </form>
+        
         </div>
   )
 }
