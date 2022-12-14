@@ -20,7 +20,7 @@ const Register = () => {
           <label>Password</label>
         </div>
         <div className="buttonFormRegister">
-          <a id='signupBtn' href="#">Submit</a>
+          <a id='signupBtn' href="/">Submit</a>
         </div>
       </form>
     </div>

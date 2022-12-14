@@ -1,24 +1,25 @@
-import React,{useEffect} from 'react'
-import { getContents } from '../../actions/contentActions'
-import Card from '../../components/Card/Card'
-import {useDispatch} from "react-redux"
+import React, { useEffect } from "react";
+import { getAllContents } from "../../actions/contentActions";
+import Card from "../../components/Card/Card";
+import { useDispatch } from "react-redux";
+import "./Home.css"
 
 const Home = () => {
   const dispatch = useDispatch();
-
-  useEffect(()=>{
-    dispatch(getContents())
-  },[dispatch])
+  const level = ["Basic", "Intermediate", "Advance"];
+  useEffect(() => {
+    dispatch(getAllContents());
+  }, [dispatch]);
 
   return (
     <>
-    <div>
-      <Card />
-    </div>
-
+      <div className="homeContainer">
+        {level.map((l, i) => (
+          <Card key={i} level={l} />
+        ))}
+      </div>
     </>
+  );
+};
 
-  )
-}
-
-export default Home
+export default Home;

@@ -16,10 +16,10 @@ const Login = () => {
             <label>Password</label>
           </div>
           <div className="buttonFormLogin">
-            <a id='loginBtn' href="#">Submit</a>
+            <a id='loginBtn' href="/">Submit</a>
             <div className="register">
               Don't have an account ?
-              <a href="#">Register</a>
+              <a href="/register">Register</a>
             </div>
           </div>
         </form>

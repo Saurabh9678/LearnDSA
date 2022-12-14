@@ -1,17 +1,20 @@
 
 import "./Card.css"
-export default function Card() {
+import React from 'react'
+
+const Card = ({level}) => {
     const handleClick = event => {
-        console.log("Card Clicked");
+        console.log(level);
       };
     return (
         <>
                 <div className="card" onClick={handleClick}>
-                    <h4>Prepare By Topics</h4>
-                    <h2>Java</h2>
-                    <button className="btn">Continue Preparation</button>
+                    <h4>Prepare By Level</h4>
+                    <h2>{level}</h2>
+                    <button className="cardBtn">Continue Preparation</button>
                 </div>
         </>
     )
 }
 
+export default Card
