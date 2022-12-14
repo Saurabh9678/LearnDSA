@@ -1,30 +1,39 @@
 .card{
+    background: #232222;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 30vw;
+    width: 25vw;
     font-family: "Roboto";
-    height: 30vh;
+    height: 25vh;
     /* border: 1px solid black; */
-    padding: 10px 25px;
+    padding: 8px 23px;
     box-sizing: border-box;
     box-shadow: 5px 5px 20px 4px rgba(20, 20,20, 0.4);
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .card h4{
 
-    color: rgb(84, 83, 83);
+    color: rgb(173, 170, 170);
+}
+.card h2{
+    color:  rgb(255, 255, 255);
 }
 .btn{
-    width: 12vw;
-    height: 7vh;
+    width: 10vw;
+    height: 5vh;
+    position: relative;
+    bottom: 1px;
     font-size: 16px;
-    background-color:  #1BA94C;
+    background-color: #D74345;
     border: none;
     color: white;
-    box-shadow: 1px 1px 5px 1px #1BA94C;
-
+    box-shadow: 1px 1px 5px 1px #D74345;
+    border-radius:10px ;
+    cursor: pointer;
 }
+
+
 .cardContainer{
     display: flex;
     justify-content: space-evenly;

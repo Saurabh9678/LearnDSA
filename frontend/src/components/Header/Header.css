@@ -1,21 +1,23 @@
 .Navbar {
     height: 60px;
     display: flex;
-    padding-left: 10%;
+    padding-left: 5%;
     padding-right: 10%;
     font-family: 'Roboto';
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(rgb(64, 64, 240),rgb(75, 75, 189));
+    background:#232222;
   }
   
   .Navbar > .nav-logo {
+    cursor: pointer;
     font-weight: 700;
     font-size: 30px;
     margin: 15px;
-    color: white; /*logo color*/
+    
+    
   }
-  
+
   .Navbar > .nav-items > a {
     color: #ffffff; /*font*/
     font-size: 18px;
@@ -36,8 +38,9 @@
     bottom: 0;
     width: 0;
     height: 2px;
-    background: #ffffff; /*font hover color*/
+    background: #D74345; /*font hover color*/
     transition: all 0.45s;
+    z-index: 99;
   }
   
   .Navbar > .nav-items > a:hover::before {
@@ -54,7 +57,7 @@
       top: 60px;
       display: flex;
       flex-direction: column;
-      background: rgb(46, 184, 184); /*responsive chg color*/
+      background: #D74345; /*responsive chg color*/
       left: 0;
       width: 100%;
       height: 100%;
@@ -83,8 +86,9 @@
       position: relative;
       width: 32px;
       height: 2px;
-      background: aqua;
+      background: #D74345;
       transition: all 0.45s ease-in-out;
+      z-index: 99;
     }
   
     .nav-toggle > .bar::before,
