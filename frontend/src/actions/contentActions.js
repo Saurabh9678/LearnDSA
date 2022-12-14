@@ -9,10 +9,10 @@ import {
 
 
 
-  export const getAllContents = () => async (dispatch) => {
+  export const getContents = () => async (dispatch) => {
     try {
         dispatch({type:ALL_CONTENT_REQUEST})
-        const {data} = await axios.get("/api/v1/contents")
+        const {data} = await axios.get("http://localhost:4000/api/v1/contents")
 
         dispatch({
             type: ALL_CONTENT_SUCCESS,
