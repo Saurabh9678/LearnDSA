@@ -18,7 +18,7 @@ const Header = () => {
             <font color="#D74345">A</font></span>
       <div className={`nav-items ${isOpen && "open"}`}>
         <Link to={"/"}>Home</Link>
-        <Link to={"/content"}>Topic</Link>
+        <Link to={"/contents"}>Topic</Link>
       </div>
       <div
         className={`nav-toggle ${isOpen && "open"}`}

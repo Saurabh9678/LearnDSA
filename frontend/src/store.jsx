@@ -1,10 +1,11 @@
 import {createStore,combineReducers,applyMiddleware} from "redux"
 import thunk from "redux-thunk"
 import {composeWithDevTools} from "redux-devtools-extension"
-import { contentReducer } from "./reducers/contentReducer";
+import { contentDetailsReducer, contentReducer } from "./reducers/contentReducer";
 
 const reducer = combineReducers({
-    contents:contentReducer
+    contents:contentReducer,
+    contentDetails: contentDetailsReducer
 });
 
 let preloadedState = {};

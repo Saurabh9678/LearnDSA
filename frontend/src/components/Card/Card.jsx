@@ -2,9 +2,10 @@
 import "./Card.css"
 import React from 'react'
 
+
 const Card = ({level}) => {
-    const handleClick = event => {
-        console.log(level);
+    const handleClick = () => {
+       console.log(level);
       };
     return (
         <>
