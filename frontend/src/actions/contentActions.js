@@ -34,7 +34,7 @@ export const getContentDetails = (id) => async (dispatch) => {
   try {
     dispatch({ type: CONTENT_DETAILS_REQUEST });
 
-    let link = `http://localhost:4000/api/v1/content/&{id}`
+    let link = `http://localhost:4000/api/v1/content/${id}`
 
     const { data } = await axios.get(link);
     

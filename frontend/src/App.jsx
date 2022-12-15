@@ -26,10 +26,11 @@ function App() {
       <Routes>
 
       <Route exact path="/" element={ <Home/>}/>
+      <Route exact path="/contents" element={ <Topic/>}/>
+      <Route exact path="/contents/:keyword" element={ <Topic/>}/>
       <Route exact path="/content/:id" element={ <Content/>}/>
       <Route exact path="/login" element={ <Login/>}/>
       <Route exact path="/register" element={ <Register/>}/>
-      <Route exact path="/contents" element={ <Topic/>}/>
       <Route path="*" element={<div>Page not found 404</div>}/>
 
       </Routes>
