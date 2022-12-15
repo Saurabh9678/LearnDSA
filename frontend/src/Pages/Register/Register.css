@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-*{
-    box-sizing: border-box;
-}
+
 body{
     background: #fff;
     font-family: 'Ubuntu', sans-serif;
@@ -12,7 +10,7 @@ body{
     top: 50%;
     left: 50%;
     width: 400px;
-    height: 62vh;
+    height: fit-content;
     padding: 40px;
     transform: translate(-50%,-50%);
     background: #232222;
@@ -69,7 +67,7 @@ body{
     margin: auto; */
     position: absolute;
     padding: 10px 30px;
-    margin: -33px 100px;
+    margin: -35px 100px;
     color: #D74345;
     text-decoration: none;
     font-size: 18px;
@@ -104,6 +102,7 @@ body{
     width: 100%;
     height: 100%;
     transition-delay: 0s;
+    border-radius: 5px;
 }
 #signupBtn:hover{
     /* background: #D74345;
@@ -114,9 +113,11 @@ body{
     color: #fff;
     box-shadow: 0 0 30px #D74345;
     transition-delay: 0.5s;
+    border-radius: 2px;
 }
 .buttonFormRegister{
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
