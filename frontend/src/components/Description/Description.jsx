@@ -15,14 +15,6 @@ const Description = () => {
   return (
     <div>
       <div className="DescriptionContainer">
-        <div className="DescriptionNav">
-          <div>
-            <a href="/">Description</a>
-          </div>
-          <div>
-            <a href="/">Solution</a>
-          </div>
-        </div>
         <div className="Description">
           <h2>{content.title}</h2>
           <br />

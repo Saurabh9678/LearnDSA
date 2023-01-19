@@ -1,24 +1,20 @@
 import React from "react";
-import Editor from "@monaco-editor/react";
-import "./IDE.css"
+// import Editor from "@monaco-editor/react";
+import "./IDE.css";
+import Iframe from "react-iframe";
 
 export default function IDE() {
-    return (
-        <div>
-            <div>
-                <Editor className="Editor"
-                    width="50vw"
-                    theme='vs-dark'
-                    height='70vh'
-                    defaultLanguage='java'
-                    value="//Write your code here" />
-            </div>
-            <div className="BtnContainer">
-                <button className="Btn">Run Code</button>
-                <button className="Btn">Submit Code</button>
-            </div>
-        </div>
-
-    )
-
-};
+  return (
+    <div>
+      <div>
+        <Iframe
+          url="http://localhost:5000/"
+          width="1000px"
+          height="900px"
+          display="block"
+          position="relative"
+        />
+      </div>
+    </div>
+  );
+}

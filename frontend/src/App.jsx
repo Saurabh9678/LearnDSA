@@ -24,7 +24,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
-
+      
       <Route exact path="/" element={ <Home/>}/>
       <Route exact path="/contents" element={ <Topic/>}/>
       <Route exact path="/contents/:keyword" element={ <Topic/>}/>
